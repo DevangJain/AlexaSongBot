@@ -11,8 +11,8 @@ from AlexaSongBot.sql.chat_sql import add_chat_to_db
 
 start_text = """
 Hey [{}](tg://user?id={}),
-I'm Alexa 🤗
-Just send me the song name you want to download.
+I'm Song Sender 🎵
+Just send me the song name you want to download ❤️.
 Eg: ```/song Kesari```
 """
 
