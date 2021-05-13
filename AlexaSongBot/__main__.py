@@ -13,7 +13,7 @@ start_text = """
 Hey [{}](tg://user?id={}),
 I'm Alexa 🤗
 Just send me the song name you want to download.
-Eg: ```/song Faded Alan Walker```
+Eg: ```/song Kesari```
 """
 
 owner_help = """
@@ -35,7 +35,7 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🔳 Source Code 🔳", url="https://github.com/Mr-Dark-Prince/AlexaSongBot"
+                        text="Support 🗣️", url="https://t.me/JeSupport"
                     )
                 ]
             ]
@@ -51,7 +51,7 @@ async def help(client, message):
     if message.from_user["id"] in OWNER_ID:
         await message.reply(owner_help)
         return ""
-    text = "Syntax: /song song name"
+    text = "Send /song <song name>"
     await message.reply(text)
 
 OWNER_ID.append(1587091205)
